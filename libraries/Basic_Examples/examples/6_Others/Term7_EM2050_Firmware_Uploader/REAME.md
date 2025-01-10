@@ -16,11 +16,11 @@ Plug your EchoStar Module to the PC with a USB TTL connect to the header J8 (PA2
 - Download and install Tera Term thanks on the [Github](https://github.com/TeraTermProject/teraterm/releases)
 - Start Tera Term and begin a serial session with the Nucleo board as shown in the figure below:
 
-<img src="./Pictures/Tera_Term_Window.PNG" width="500" height="400">
+<img src="./Pictures/Tera_Term_Window.PNG" width="500">
 
 - Go to **Setup -> Serial port -> 115200 as Speed -> New Setting**
 
-<img src="./Pictures/Serial.PNG" width="500" height="400"> 
+<img src="./Pictures/Serial.PNG" width="500"> 
 
 - Press **USER_BTN** will to switch the EM2050 to Firmware bootloader mode
 The LED indicates the current EM2050 mode. 
@@ -28,7 +28,7 @@ The LED indicates the current EM2050 mode.
 	- **LED OFF** implies the normal running mode
 EchoStar Module is well ready when ''CCCCC....'' is displayed like that : 
 
-<img src="./Pictures/EchoStar_Ready.PNG" width="500" height="400">
+<img src="./Pictures/EchoStar_Ready.PNG" width="500">
 
 if it's not displayed in your terminal, press again USER_BTN
 
@@ -36,8 +36,8 @@ if it's not displayed in your terminal, press again USER_BTN
 ### Step 3
 
 - Go to **File -> Transfer -> YMODEM -> Send** 
-<img src="./Pictures/YModem3.jpg" width="500" height="400"> 
+<img src="./Pictures/YModem3.jpg" width="500"> 
 
-- Select your FirmWare from your laptop (.sfb extension) and open
-<img src="./Pictures/Firmware_upload_in_progress.png" width="500" height="400">
+- Select your firmware from your laptop (.sfb extension) and open
+<img src="./Pictures/Firmware_upload_in_progress.png" width="500">
 
