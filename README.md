@@ -78,6 +78,7 @@ There are external libraries used in these example. They could be found & instal
 - [nguyenmanhthao996tn/Kionix_KX023](https://github.com/nguyenmanhthao996tn/Kionix_KX023)
 - [Seeed-Studio/Seeed_Arduino_LIS3DHTR](https://github.com/Seeed-Studio/Seeed_Arduino_LIS3DHTR)
 - [stevemarple/MicroNMEA](https://github.com/stevemarple/MicroNMEA)
+- [arduino-libraries/SD](https://github.com/arduino-libraries/SD)
 
 # Pre-define for Pin Name/Number & others
 
@@ -123,6 +124,10 @@ The variant in this core includes pre-define for MCU pins connected to on-boards
 |  36   |  SENSORS_BME680_ADDRESS  | Not available |     0x77      |     0x77      |                 I2C Address of BME680/688                  |
 |  37   |  SENSORS_KX023_ADDRESS   |     0x1F      |     0x1F      |     0x1F      |                    I2C Address of KX023                    |
 |  38   | SENSORS_LIS3DHTR_ADDRESS |     0x19      |     0x19      |     0x19      |                  I2C Address of LIS3DHTR                   |
+|  39   |      SDCARD_SS_PIN       | Not available | Not available |      PB0      |                    SD Card CD/DAT3 Pin                     |
+|  40   |     SDCARD_MOSI_PIN      | Not available | Not available |     PB15      |                   SD Card MOSI (CMD) Pin                   |
+|  41   |     SDCARD_MISO_PIN      | Not available | Not available |     PB14      |                  SD Card MISO (DAT0) Pin                   |
+|  42   |      SDCARD_SCK_PIN      | Not available | Not available |     PB13      |                   SD Card SCK (CLK) Pin                    |
 
 # I2C Addresses
 
