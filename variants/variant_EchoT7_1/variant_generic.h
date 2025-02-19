@@ -144,27 +144,52 @@
 #define SENSORS_KX023_ADDRESS 0x1F
 #define SENSORS_LIS3DHTR_ADDRESS 0x19
 
+// SDCard
+#ifndef SDCARD_SS_PIN
+#define SDCARD_SS_PIN PB0
+#else
+#warning SDCARD_SS_PIN is already defined, compile using the predefined value
+#endif /* SDCARD_SS_PIN */
+
+#ifndef SDCARD_MOSI_PIN
+#define SDCARD_MOSI_PIN PB15
+#else
+#warning SDCARD_MOSI_PIN is already defined, compile using the predefined value
+#endif /* SDCARD_MOSI_PIN */
+
+#ifndef SDCARD_MISO_PIN
+#define SDCARD_MISO_PIN PB14
+#else
+#warning SDCARD_MISO_PIN is already defined, compile using the predefined value
+#endif /* SDCARD_MISO_PIN */
+
+#ifndef SDCARD_SCK_PIN
+#define SDCARD_SCK_PIN PB13
+#else
+#warning SDCARD_SCK_PIN is already defined, compile using the predefined value
+#endif /* SDCARD_SCK_PIN */
+
 // SPI definitions
 #ifndef PIN_SPI_SS
-#define PIN_SPI_SS PA4
+#define PIN_SPI_SS SDCARD_SS_PIN
 #endif
 #ifndef PIN_SPI_SS1
-#define PIN_SPI_SS1 PA15
+#define PIN_SPI_SS1 PNUM_NOT_DEFINED
 #endif
 #ifndef PIN_SPI_SS2
-#define PIN_SPI_SS2 PB0
+#define PIN_SPI_SS2 PNUM_NOT_DEFINED
 #endif
 #ifndef PIN_SPI_SS3
 #define PIN_SPI_SS3 PNUM_NOT_DEFINED
 #endif
 #ifndef PIN_SPI_MOSI
-#define PIN_SPI_MOSI PA7
+#define PIN_SPI_MOSI SDCARD_MOSI_PIN
 #endif
 #ifndef PIN_SPI_MISO
-#define PIN_SPI_MISO PA6
+#define PIN_SPI_MISO SDCARD_MISO_PIN
 #endif
 #ifndef PIN_SPI_SCK
-#define PIN_SPI_SCK PA1
+#define PIN_SPI_SCK SDCARD_SCK_PIN
 #endif
 
 // I2C definitions
